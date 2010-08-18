@@ -295,7 +295,7 @@ module Mongo
     #
     # @core databases []-instance_method
     def [](db_name)
-      DB.new(db_name, self, :logger => @logger)
+      db(db_name)
     end
 
     # Drop a database.
